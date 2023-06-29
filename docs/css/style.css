@@ -1,0 +1,208 @@
+@charset "utf-8";
+
+/* 레이아웃 */
+#header {width: 100%; background: #998260;}
+#poster {background: #998260;}
+#footer {background: #211f1f;}
+
+/* 가운데영역 */
+.container {position: relative; width: 1280px; margin: 0 auto; background: rgba(0, 0, 0, 0.0);}
+
+/* 헤더 영역 */
+.header h1 {float: left;}
+.header h1 .logo {padding: 10px 20px 10px 20px; display:inline-block;}
+.header h1 .logo img {width: 30px;}
+.header h1 strong {font-size: 30px;color: #fff;}
+
+.nav ul {padding: 0 10px;}
+.nav ul li {margin-bottom: 20px; margin-right: 15px; float: left; text-align: center;}
+.nav ul li a {position: relative; display: block; padding: 10px 30px 10px 30px; font-size: 20px; font-weight: 700; color: #444; border: 3px solid #666666; overflow: hidden; transition: all 0.5s; }
+.manu::before {
+    content: "";
+    position: absolute;
+    width: 100%; height: 100%;
+    top:100%; left: 0;
+    transition: all 0.5s;
+}
+.manu:hover::before {
+    transform: translateY(-100%);
+}
+.manu:hover {
+    color: #000;
+    background-color:#ffcc00;
+}
+
+/* 포스터 영역 */
+.exh {padding: 60px 0 60px 0; text-align: center;}
+.DTS {margin-bottom: 50px;}
+.DTS_title {display:inline-block; width: 100%; border: 2px solid #666666; margin-right: 20px; background:#ffcc00;}
+.DTS_title h3 {color: #000; font-size: 15px; font-weight: 700; padding: 5px 20px 5px 20px; text-align: left;}
+.DTS_infor {margin-bottom: 10px; display:inline-block; width: 100%; border: 2px solid #666666; margin-right: 20px; background:#000; }
+.DTS_infor h3 {color: #fff; font-size: 15px; font-weight: 500; padding: 5px 20px 5px 20px; text-align: left;}
+.DTS_infor strong {color: #fff; font-size: 15px; font-weight: 500; padding: 5px 20px 5px 20px;}
+
+.DTS_ingame_verson {margin-bottom: 10px; display:inline-block; width: 100%; border: 2px solid #666666; margin-right: 20px; background:#336600;}
+.DTS_ingame_verson h3 {color: #fff; font-size: 15px; font-weight: 700; padding: 5px 20px 5px 20px; text-align: left;}
+
+.DTS_ingame_verson_infor {margin-bottom: 10px; display:inline-block; width: 100%; border: 2px solid #666666; margin-right: 20px; background:#000; }
+.DTS_ingame_verson_infor h3 {margin-bottom: 10px; color: #fff; font-size: 15px; font-weight: 500; padding: 5px 20px 5px 20px; text-align: left;}
+.DTS_ingame_verson_infor strong {color: #fff; font-size: 15px; font-weight: 500; padding: 5px 20px 5px 20px;}
+
+.DTS_verson {position: relative; display:inline-block; width: 100%; border: 2px solid #666666; margin-right: 20px; background:#ffcc00;}
+.DTS_verson h3 {color: #000; font-size: 15px; font-weight: 700; padding: 5px 20px 5px 20px; text-align: left;}
+.DTS_verson em {position: absolute; top: 5px; right: 10px;}
+.DTS_verson em a { font-size: 15px;}
+.DTS_verson_infor {margin-bottom: 10px; display:inline-block; width: 100%; border: 2px solid #666666; margin-right: 20px; background:#000; }
+.DTS_verson_infor h3 {margin-bottom: 10px; color: #fff; font-size: 15px; font-weight: 500; padding: 5px 20px 5px 20px; text-align: left;}
+.DTS_verson_infor strong {color: #fff; font-size: 15px; font-weight: 500; padding: 5px 20px 5px 20px; }
+
+.DTS_RC_verson {position: relative; display:inline-block; width: 100%; border: 2px solid #666666; margin-right: 20px; background:#ffcc00;}
+.DTS_RC_verson h3 {color: #000; font-size: 15px; font-weight: 700; padding: 5px 20px 5px 20px; text-align: left;}
+.DTS_RC_verson em {position: absolute; top: 5px; right: 10px;}
+.DTS_RC_verson em a { font-size: 15px;}
+.DTS_RC_verson {display:inline-block; width: 100%; border: 2px solid #666666; margin-right: 20px; background:#ffcc00;}
+.DTS_RC_verson_infor {margin-bottom: 10px; display:inline-block; width: 100%; border: 2px solid #666666; margin-right: 20px; background:#000;}
+.DTS_RC_verson_infor h3 {margin-bottom: 10px; color: #fff; font-size: 15px; font-weight: 500; padding: 5px 20px 5px 20px; text-align: left;}
+.DTS_RC_verson_infor strong {color: #fff; font-size: 15px; font-weight: 500; padding: 5px 20px 5px 20px;}
+
+.Save {margin-bottom: 50px;}
+.Save_title {display:inline-block; width: 100%; border: 2px solid #666666; margin-right: 20px; background:#ffcc00;}
+.Save_title h3 {color: #000; font-size: 15px; font-weight: 700; padding: 5px 20px 5px 20px; text-align: left;}
+.Save_infor {margin-bottom: 10px; display:inline-block; width: 100%; border: 2px solid #666666; margin-right: 20px; background:#000; }
+.Save_infor h3 {color: #fff; font-size: 15px; font-weight: 500; padding: 5px 20px 5px 20px; text-align: left;}
+.Save_infor strong {color: #fff; font-size: 15px; font-weight: 500; padding: 5px 20px 5px 20px;}
+
+.Save_verson {position: relative; display:inline-block; width: 100%; border: 2px solid #666666; margin-right: 20px; background:#ffcc00;}
+.Save_verson h3 {color: #000; font-size: 15px; font-weight: 700; padding: 5px 20px 5px 20px;text-align: left;}
+.Save_verson em {position: absolute; top: 5px; right: 10px;}
+.Save_verson em a { font-size: 15px;}
+.Save_verson {display:inline-block; width: 100%; border: 2px solid #666666; margin-right: 20px; background:#ffcc00;}
+.Save_verson_infor {margin-bottom: 10px; display:inline-block; width: 100%; border: 2px solid #666666; margin-right: 20px; background:#000; }
+.Save_verson_infor h3 {margin-bottom: 10px; color: #fff; font-size: 15px; font-weight: 500; padding: 5px 20px 5px 20px; text-align: left;}
+.Save_verson_infor strong {color: #fff; font-size: 15px; font-weight: 500; padding: 5px 20px 5px 20px;}
+
+.Train {margin-bottom: 50px;}
+.Train_title {display:inline-block; width: 100%; border: 2px solid #666666; margin-right: 20px; background:#ffcc00;}
+.Train_title h3 {color: #000; font-size: 15px; font-weight: 700; padding: 5px 20px 5px 20px; text-align: left;}
+.Train_infor {margin-bottom: 10px; display:inline-block; width: 100%; border: 2px solid #666666; margin-right: 20px; background:#000; }
+.Train_infor h3 {color: #fff; font-size: 15px; font-weight: 500; padding: 5px 20px 5px 20px; text-align: left;}
+.Train_infor strong {color: #fff; font-size: 15px; font-weight: 500; padding: 5px 20px 5px 20px;}
+
+.Train_parameter {display:inline-block; width: 100%; border: 2px solid #666666; margin-right: 20px; background:#ffcc00;}
+.Train_parameter h3 {color: #000; font-size: 15px; font-weight: 700; padding: 5px 20px 5px 20px; text-align: left;}
+.Train_parameter_infor {margin-bottom: 10px; display:inline-block; width: 100%; border: 2px solid #666666; margin-right: 20px; background:#000; }
+.Train_parameter_infor h3 {color: #fff; font-size: 15px; font-weight: 500; padding: 5px 20px 5px 20px; text-align: left;}
+.Train_parameter_infor strong {color: #fff; font-size: 15px; font-weight: 500; padding: 5px 20px 5px 20px;}
+
+.Train_basic {display:inline-block; width: 11%; border: 2px solid #666666; margin-right: 1px; background:#ffcc00;}
+.Train_basic h3 {color: #000; font-size: 13px; font-weight: 700; padding: 5px 5px 5px 5px; text-align: center;}
+
+.Train_List {position: relative; display:inline-block; width: 100%; border: 2px solid #666666; margin-right: 20px; background:#999999;}
+.Train_List h3 {color: #fff; font-size: 15px; font-weight: 700;text-align: left;}
+.Train_List img {width: 70px; height: 15px;}
+.Train_locomotive {float: left; width: 50%; font-size: 13px; font-weight: 700;}
+.Train_locomtive_title {border-bottom: 2px solid #666666; border-right: 2px solid #666666; padding: 5px 20px 5px 20px; text-align: center; color: #fff;}
+.Train_locomtive_list {border-right: 2px solid #666666; padding: 5px 20px 5px 20px; text-align: left; line-height: 25px; color: #000;}
+.Train_locomtive_list details {transition: all 1s;}
+.Train_locomtive_list summary {color: #000; font-size: 14px; font-weight: 700; transition: all 1s;}
+.t_S_h3 {color: #000; font-size: 15px; font-weight: 900; text-align: left;}
+.Train_wagon {float: left; width: 50%; font-size: 13px; font-weight: 700;}
+.Train_wagon_title {border-bottom: 2px solid #666666;padding: 5px 20px 5px 20px; text-align: center; color: #fff;}
+.Train_wagon_list {padding: 5px 20px 5px 20px; text-align: left; line-height: 25px; color: #000;}
+.Train_wagon_list details {transition: all 1s;}
+.Train_wagon_list summary {color: #000; font-size: 14px; font-weight: 700; transition: all 1s;}
+.t_S_h3 {color: #000; font-size: 15px; font-weight: 900; text-align: left;}
+
+/* Footer 영역 */
+.footer_sns {position: absolute; right: 17px; top: 33px; z-index: 1;}
+.footer_sns li {display: inline-block;}
+.footer_sns li a {display: block; width: 36px; height: 36px;}
+.footer_sns li.s1 {background-position: 0 0px;}
+.footer_sns li.s2 {background-position: -36px 0px;}
+.footer_sns li.s3 {background-position: -72px 0px;}
+.footer_sns li.s1:hover {background-position: 0 -36px;}
+.footer_sns li.s2:hover {background-position: -36px -36px;}
+.footer_sns li.s3:hover {background-position: -72px -36px;}
+.footer_sns .tel {text-align: right; padding-top: 5px;}
+.footer_sns .tel a {color: #8f8f8f; font-size: 21px;}
+.footer_sns .tel a em {color: #fff;}
+
+.footer_info {padding: 50px 0; width: 80%;}
+.footer_info h2 img {width: 100px;}
+.footer_info ul {position: absolute; left: 120px; top: 40px; padding: 15px 0;}
+.footer_info li {position: relative; display: inline; padding-left: 16px; white-space: nowrap;} 
+.footer_info li:after {content: ''; position: absolute; right: -10px; top: 5px; width: 1px; height: 11px; background: #8f8f8f;}
+.footer_info li:last-child:after {width: 0; height: 0;}
+.footer_info li a {color: #8f8f8f;}
+.footer_info address {position: absolute; left: 120px; top: 90px;}
+.footer_info address p {color: #8f8f8f; padding-bottom: 15px;}
+
+/* 미디어쿼리 */
+@media (max-width: 1290px){
+    .container {width: 100%;}
+    .row {padding: 0 20px;}
+    .column_title ul li {float: none; width: 100%;}
+    .artlist_chart {float: left;width: 72%;}
+}
+@media (max-width: 1210px){
+}
+
+@media (max-width: 1060px){
+}
+@media (max-width: 1024px){}
+@media (max-width: 960px){
+    .header h1 em img {width: 50px;}
+    .header h1 strong a {font-size: 30px;}
+
+    .nav ul li {width: 96px;}
+    .nav ul li a {padding: 10px 20px; font-size: 15px;}
+
+    .exh {padding: 50px 0 50px 0;}
+
+}
+@media (max-width: 940px){
+}
+@media (max-width: 780px){}
+@media (max-width: 720px){
+    .history {padding: 0 20px 15px 20px; text-align: center;}
+    .history_title ul li {width: 100%;}
+    .history h2 {font-size: 20px; padding: 0 0 5px 0;}
+    .history h3 {font-size: 15px; padding: 5px 0 5px 0;}
+
+    .Train_locomotive {float: none; width: 100%;}
+    .Train_locomtive_title {border-right: none;}
+    .Train_locomtive_list {border-right: none;}
+    .Train_wagon {float: none; width: 100%; border-top: 2px solid #666666;}
+
+    .footer_sns {position: static; text-align: center; background: #352c2c;}
+    .footer_sns .tel {text-align: center; padding-top: 5px;}
+    .footer_sns .tel a {font-size: 15px;}
+
+    .footer_info {padding: 20px 0; width: 100%;}
+    .footer_info h2 img {display: none;}
+    .footer_info ul {position: static; text-align: center;}
+    .footer_info li {position: static; padding-left: 5px;} 
+    .footer_info address {position: static; text-align: center;}
+}
+@media (max-width: 680px){
+    .header h1 {float: none;}
+    
+    .header .nav ul {border-left: 0;}
+    .header .nav ul li a {display: inline;}
+    .header .nav ul li:last-child {border: 0;}
+}
+@media (max-width: 640px){
+}
+@media (max-width: 620px){
+    
+}
+@media (max-width: 480px){
+    .header h1 .logo1 img {display: none;}
+    .column_title ul li a {font-size: 12px;}
+}
+@media (max-width: 400px){
+    .nav ul li a {padding: 10px 25px 10px 25px; font-size: 10px;}
+}
+@media (max-width: 370px){}
+@media (max-width: 320px){}
+
